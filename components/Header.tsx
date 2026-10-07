@@ -20,7 +20,6 @@ export default function Header() {
     { href: '/calculator', label: isAm ? 'ካልኩሌተር' : 'Calculator' },
     { href: '/installations', label: t.nav.installations },
     { href: '/services', label: t.nav.services },
-    { href: '/proforma', label: t.nav.proforma || (isAm ? 'ፕሮፎርማ' : 'Proforma') },
     { href: '/about', label: t.nav.about },
     { href: '/contact', label: t.nav.contact },
   ];
@@ -54,7 +53,11 @@ export default function Header() {
         </nav>
         <div className="header-cta">
           <LanguageSwitch variant="pill" />
-          <Link href="/proforma" className="btn btn-proforma only-desktop" style={{ minHeight: 40, padding: '0 14px', fontSize: '0.88rem', gap: 6 }}>
+          <Link
+            href="/proforma"
+            className={`btn btn-proforma only-desktop ${pathname.startsWith('/proforma') ? 'active' : ''}`}
+            style={{ minHeight: 40, padding: '0 14px', fontSize: '0.88rem', gap: 6 }}
+          >
             <FileText size={15} />
             <span>{isAm ? 'ፕሮፎርማ' : 'Proforma'}</span>
           </Link>
@@ -83,6 +86,15 @@ export default function Header() {
               </Link>
             );
           })}
+          <Link
+            href="/proforma"
+            className={pathname.startsWith('/proforma') ? 'active' : ''}
+            onClick={() => setOpen(false)}
+            style={{ color: 'var(--green)', fontWeight: 800, display: 'flex', alignItems: 'center', gap: 8 }}
+          >
+            <FileText size={18} />
+            {isAm ? 'ይፋዊ ፕሮፎርማ (Proforma)' : 'Request Proforma'}
+          </Link>
         </nav>
       )}
     </header>
