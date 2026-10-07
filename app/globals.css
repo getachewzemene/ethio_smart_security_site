@@ -1331,3 +1331,115 @@ body.lang-am h1, body.lang-am h2, body.lang-am h3 {
     padding: 28px 20px;
   }
 }
+
+/* 4. Nationwide Coverage Across Ethiopia */
+.nationwide-section {
+  padding: 24px 0 36px;
+}
+.nationwide-banner {
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 32px 28px;
+  box-shadow: 0 4px 18px rgba(11, 29, 69, 0.04);
+}
+.nationwide-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+.nationwide-header > div:first-child {
+  max-width: 760px;
+}
+.nationwide-header h2 {
+  font-size: clamp(1.4rem, 3vw, 1.85rem);
+  margin: 8px 0 6px;
+  color: var(--ink);
+}
+.nationwide-header p {
+  color: var(--muted);
+  font-size: 0.94rem;
+  line-height: 1.55;
+  margin: 0;
+}
+.nationwide-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--green);
+  background: #eefbf4;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+.nationwide-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+@media (min-width: 680px) {
+  .nationwide-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.city-card {
+  background: #f8fafc;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 12px 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.2s ease;
+}
+.city-card:hover {
+  background: #f0fdf4;
+  border-color: #a7f3d0;
+  transform: translateY(-1px);
+}
+.city-card.hq {
+  border-color: #93c5fd;
+  background: #f0f7ff;
+}
+.city-card.all-regions {
+  background: #faf5ff;
+  border-color: #ddd6fe;
+}
+.city-pin {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: #ffffff;
+  color: var(--green);
+  display: grid;
+  place-items: center;
+  flex: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+.city-card.hq .city-pin {
+  color: #2563eb;
+}
+.city-card.all-regions .city-pin {
+  color: #7c3aed;
+}
+.city-name {
+  display: block;
+  font-size: 0.92rem;
+  color: var(--ink);
+  font-weight: 800;
+  line-height: 1.2;
+}
+.city-sub {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--muted);
+  line-height: 1.3;
+  margin-top: 2px;
+}
+

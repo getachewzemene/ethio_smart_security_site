@@ -8,21 +8,45 @@ import JsonLd from '@/components/JsonLd';
 import { site } from '@/lib/site';
 
 const description =
-  'Professional CCTV installation and remote phone monitoring in Addis Ababa for homes, shops, pharmacies, offices and factories. Call or WhatsApp 0945-282035.';
+  'Professional CCTV installation, biometric access control & physical security engineering across Ethiopia. Serving Addis Ababa, Bahir Dar, Hawassa, Adama, Jimma, Mekelle, Debre Zeit and all regions. Call or WhatsApp 0945-282035.';
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
-  title: { default: 'CCTV Installation in Addis Ababa | Ethio Smart Security & CCTV', template: '%s | Ethio Smart Security' },
+  title: {
+    default: 'CCTV & Security Solutions in Ethiopia | Addis Ababa, Bahir Dar, Hawassa, Adama, Jimma, Mekelle',
+    template: '%s | Ethio Smart Security',
+  },
   description,
-  keywords: ['CCTV installation Addis Ababa', 'CCTV camera Addis Ababa', 'CCTV Ethiopia', 'security camera Addis Ababa', '4G CCTV camera Ethiopia', 'solar CCTV Ethiopia'],
+  keywords: [
+    'CCTV installation Ethiopia',
+    'security camera Ethiopia',
+    'CCTV Addis Ababa',
+    'CCTV Bahir Dar',
+    'CCTV Hawassa',
+    'CCTV Adama',
+    'CCTV Jimma',
+    'CCTV Mekelle',
+    'CCTV Debre Zeit Bishoftu',
+    'access control Ethiopia',
+    'commercial security Ethiopia',
+    'CCTV camera installation Ethiopia',
+  ],
   alternates: { canonical: '/' },
   openGraph: {
-    type: 'website', locale: 'en_ET', url: site.url, siteName: site.name,
-    title: 'CCTV Installation in Addis Ababa | Ethio Smart Security & CCTV',
+    type: 'website',
+    locale: 'en_ET',
+    url: site.url,
+    siteName: site.name,
+    title: 'CCTV & Security Solutions in Ethiopia | Addis Ababa, Bahir Dar, Hawassa, Adama, Jimma, Mekelle',
     description,
     images: [{ url: '/og.png', width: 1200, height: 630, alt: 'Ethio Smart Security & CCTV' }],
   },
-  twitter: { card: 'summary_large_image', title: 'Ethio Smart Security & CCTV – Addis Ababa', description, images: ['/og.png'] },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Ethio Smart Security & CCTV – Nationwide Ethiopia',
+    description,
+    images: ['/og.png'],
+  },
   robots: {
     index: true,
     follow: true,

@@ -4,7 +4,7 @@ import JsonLd from '@/components/JsonLd';
 import { resolvedFaqs } from '@/lib/content';
 
 export const metadata: Metadata = {
-  title: { absolute: 'CCTV Installation in Addis Ababa | Ethio Smart Security & CCTV' },
+  title: { absolute: 'CCTV Installation & Security Solutions in Ethiopia | Ethio Smart Security' },
   alternates: { canonical: '/' },
 };
 

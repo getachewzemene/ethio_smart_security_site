@@ -31,11 +31,11 @@ export default function CompanyProfileContent() {
     <>
       <section className="page-hero">
         <div className="wrap">
-          <h1>{isAm ? 'የድርጅት መገለጫ እና የቴክኒክ አቅም' : 'Company Profile & Capabilities'}</h1>
+          <h1>{isAm ? 'የድርጅት መገለጫ እና የቴክኒክ አቅም (አገር አቀፍ)' : 'Company Profile & Engineering Capabilities'}</h1>
           <p className="lead">
             {isAm
-              ? 'ኢትዮ ስማርት ሴኩሪቲ እና ሲሲቲቪ በአዲስ አበባ የተመሰረተ፣ የንግድ ሕንፃዎችን፣ ፋብሪካዎችን፣ ቪላዎችንና ተቋማትን በዘመናዊ የኤሌክትሮኒክስ ደህንነት ቴክኖሎጂ የሚጠብቅ ድርጅት ነው።'
-              : 'Ethio Smart Security & CCTV is an Addis Ababa based electronic security systems provider specializing in commercial surveillance, access control, and turnkey security engineering.'}
+              ? 'ኢትዮ ስማርት ሴኩሪቲ እና ሲሲቲቪ በአዲስ አበባ፣ ባህር ዳር፣ ሀዋሳ፣ አዳማ፣ ደብረ ዘይት/ቢሾፍቱ፣ ጅማ፣ መቐለ እና በመላው ኢትዮጵያ ለሚገኙ የንግድ ሕንፃዎች፣ ፋብሪካዎች፣ ቪላዎችና ተቋማት ደረጃውን የጠበቀ የኤሌክትሮኒክስ ደህንነት ምህንድስና የሚያቀርብ ድርጅት ነው።'
+              : 'Ethio Smart Security & CCTV is an electronic physical security engineering firm deploying turnkey surveillance, biometric access control, and smart automation across Ethiopia — Addis Ababa, Bahir Dar, Hawassa, Adama, Debre Zeit, Jimma, Mekelle, and all regional states.'}
           </p>
 
           <div className="corp-badge-row">

@@ -19,6 +19,7 @@ import {
 } from 'lucide-react';
 import FeedMock from '@/components/FeedMock';
 import CorporateStatsBar from '@/components/CorporateStatsBar';
+import NationwideCoverageStrip from '@/components/NationwideCoverageStrip';
 import { Reviews } from '@/components/Sections';
 import { site, whatsappLink } from '@/lib/site';
 import { useLanguage } from '@/lib/i18n';
@@ -46,7 +47,7 @@ export default function HomePageContent() {
               }}
             >
               <ShieldCheck size={16} />{' '}
-              {isAm ? 'የተረጋገጠ የደህንነት ምህንድስና' : 'Enterprise Security Engineering'}
+              {isAm ? 'አገር አቀፍ የደህንነት ምህንድስና · በመላው ኢትዮጵያ' : 'Nationwide Security Engineering Across Ethiopia'}
             </span>
             <h1>{t.hero.title}</h1>
             <p className="lead">{t.hero.lead}</p>
@@ -470,15 +471,18 @@ export default function HomePageContent() {
         </div>
       </section>
 
-      {/* 6. Verified Customer Feedback */}
+      {/* 6. Nationwide Regional Coverage & Deployment Hubs */}
+      <NationwideCoverageStrip />
+
+      {/* 7. Verified Customer Feedback */}
       <section className="section alt" id="reviews">
         <div className="wrap">
           <div className="sec-head">
             <h2>{t.sections.reviewsTitle}</h2>
             <p>
               {isAm
-                ? 'በአዲስ አበባ ውስጥ ቤታቸውን፣ ሱቃቸውን እና ድርጅታቸውን በእኛ ያሰሩ ደንበኞች አስተያየት።'
-                : 'What property owners, building managers, and shop owners say about our installations.'}
+                ? 'በአዲስ አበባ፣ በባህር ዳር፣ በሀዋሳ፣ በአዳማ፣ በደብረ ዘይት፣ በጅማ እና በመቐለ የተከናወኑ ስራዎች እና የደንበኞቻችን አስተያየት።'
+                : 'Verified reviews from property owners, industrial plants, and commercial managers across Ethiopia.'}
             </p>
           </div>
           <Reviews />

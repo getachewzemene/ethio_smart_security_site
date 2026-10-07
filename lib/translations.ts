@@ -93,8 +93,8 @@ export const translations = {
       switchLang: 'Switch to Amharic',
     },
     hero: {
-      title: 'Professional CCTV & security solutions in Addis Ababa',
-      lead: 'Protect your home, shop, office or business with professional CCTV installation and remote monitoring.',
+      title: 'Professional CCTV & Security Solutions Across Ethiopia',
+      lead: 'Protect your commercial complex, factory, warehouse, office or residential property with enterprise security engineering in Addis Ababa, Bahir Dar, Hawassa, Adama, Jimma, Mekelle, Debre Zeit, and all regional cities.',
       phoneSub: 'Call or WhatsApp',
       linkText: 'Explore security solutions',
     },
@@ -106,11 +106,11 @@ export const translations = {
       livePhone: 'Live on your phone',
     },
     trust: [
-      'Professional installation',
-      'Remote phone monitoring',
-      'Warranty',
-      'After-sales support',
-      'Addis Ababa service',
+      'Professional engineering installation',
+      'Remote mobile monitoring 24/7',
+      '1–2 Years written warranty',
+      'Prompt after-sales technical support',
+      'Nationwide coverage across all Ethiopian regions',
     ],
     sections: {
       protectTitle: 'What are you protecting?',
@@ -121,9 +121,9 @@ export const translations = {
       servicesTitle: 'Our services',
       servicesSub:
         'Everything from deciding what you need to installing it and helping you afterwards.',
-      installationsTitle: 'Real installations',
+      installationsTitle: 'Real installations across Ethiopia',
       installationsSub:
-        'We install the systems we sell. Here is the kind of work our team does across Addis Ababa.',
+        'We install the systems we engineer. Here are our commercial, industrial, and residential projects in Addis Ababa, Hawassa, Bahir Dar, Adama, Debre Zeit, Jimma, and Mekelle.',
       demosTitle: 'See our latest CCTV demonstrations',
       demosSub:
         'Seen one of our videos on TikTok or Facebook? Here is how each feature works.',
@@ -132,7 +132,7 @@ export const translations = {
       howSub: 'Five simple steps. No forms, no accounts.',
       popularTitle: 'Popular choices',
       popularSub: "Our most requested cameras. Prices change, so ask us for today's price.",
-      reviewsTitle: 'Customer reviews',
+      reviewsTitle: 'Customer reviews across Ethiopia',
       reviewsNote:
         'Ask for real references. We can show you installations like yours and put you in touch with customers on request. You can also see customer feedback on our Facebook page.',
       faqTitle: 'Questions we get asked',
@@ -537,8 +537,8 @@ export const translations = {
         a: '4G / SIM cameras work with a mobile data SIM card and do not need Wi-Fi. They are a good fit for shops, sites and remote locations. The signal strength at your location matters, so we check it with you.',
       },
       {
-        q: 'Do you install the cameras?',
-        a: 'Yes. Our team installs and configures the cameras in Addis Ababa. If you are outside Addis Ababa, call us to ask about your area.',
+        q: 'Do you install cameras outside Addis Ababa across Ethiopia?',
+        a: 'Yes, absolutely. We deploy engineering installation teams across all regional states in Ethiopia — with frequent commercial and industrial projects in Bahir Dar, Hawassa, Adama, Jimma, Mekelle, Debre Zeit / Bishoftu, and regional industrial parks. Contact us for route planning and proforma.',
       },
       {
         q: 'Can you install cameras in shops and pharmacies?',
@@ -645,8 +645,8 @@ export const translations = {
       switchLang: 'ወደ English ይቀይሩ',
     },
     hero: {
-      title: 'በአዲስ አበባ አስተማማኝ የሲሲቲቪ ካሜራ እና የደህንነት መፍትሔዎች',
-      lead: 'መኖሪያ ቤትዎን፣ ሱቅዎን፣ ቢሮዎን ወይም ድርጅትዎን ጥራት ባለው የሲሲቲቪ ገጠማ እና በስልክዎ በቀጥታ በመከታተል ይጠብቁ።',
+      title: 'በመላው ኢትዮጵያ አስተማማኝ የሲሲቲቪ ካሜራ እና የደህንነት መፍትሔዎች',
+      lead: 'በአዲስ አበባ፣ ባህር ዳር፣ ሀዋሳ፣ አዳማ፣ ጅማ፣ መቐለ፣ ደብረ ዘይት እና በሁሉም ክልሎች ለሚገኙ ህንፃዎች፣ ፋብሪካዎችና መኖሪያዎች የተሟላ የደህንነት ምህንድስና።',
       phoneSub: 'ይደውሉ ወይም ዋትስአፕ ያድርጉ',
       linkText: 'የደህንነት መፍትሔዎችን ይመልከቱ',
     },
@@ -660,9 +660,9 @@ export const translations = {
     trust: [
       'ባለሙያ የካሜራ ገጠማ',
       'በስልክዎ በቀጥታ መከታተያ',
-      'አስተማማኝ ዋስትና',
-      'የገጠማ በኋላ ድጋፍ',
-      'በአዲስ አበባ ፈጣን አገልግሎት',
+      'የ1–2 ዓመት የጽሁፍ ዋስትና',
+      'ቀጣይነት ያለው የቴክኒክ ድጋፍ',
+      'በአዲስ አበባ እና በሁሉም የክልል ከተሞች የሚሰራ አገር አቀፍ አገልግሎት',
     ],
     sections: {
       protectTitle: 'ምን ዓይነት ቦታ ነው መጠበቅ የሚፈልጉት?',
@@ -671,8 +671,8 @@ export const translations = {
       solutionsSub: 'የካታሎግ ዝርዝር ብቻ አይደለም። የገጠመዎትን ችግር ይንገሩን፡ መፍትሔ የሚሆነውን ካሜራ እንመክራለን።',
       servicesTitle: 'አገልግሎቶቻችን',
       servicesSub: 'የሚፈልጉትን ካሜራ ከመምረጥ ጀምሮ እስከ መግጠም እና የድህረ-ሽያጭ ድጋፍ ድረስ።',
-      installationsTitle: 'የተከናወኑ እውነተኛ የገጠማ ስራዎች',
-      installationsSub: 'የምንሸጣቸውን ሲስተሞች እኛው ራሳችን እንገጥማቸዋለን። በአዲስ አበባ ዙሪያ የሰራናቸው አንዳንድ ስራዎች እነሆ።',
+      installationsTitle: 'የተከናወኑ እውነተኛ የገጠማ ስራዎች (አገር አቀፍ)',
+      installationsSub: 'የምንሸጣቸውን ሲስተሞች እኛው ራሳችን እንገጥማቸዋለን። በአዲስ አበባ፣ ባህር ዳር፣ ሀዋሳ፣ አዳማ፣ ደብረ ዘይት፣ ጅማ እና መቐለ የሰራናቸው እውነተኛ ስራዎች እነሆ።',
       demosTitle: 'አዳዲስ የሲሲቲቪ ካሜራ ማሳያ ቪዲዮዎቻችንን ይመልከቱ',
       demosSub: 'በቲክቶክ ወይም በፌስቡክ ቪዲዮዎቻችንን አይተዋል? እያንዳንዱ አገልግሎት እንዴት እንደሚሰራ ይመልከቱ።',
       whyTitle: 'ለምን ኢትዮ ስማርት ሴኩሪቲን ይመርጣሉ?',
@@ -680,7 +680,7 @@ export const translations = {
       howSub: '5 ቀላል ደረጃዎች። ምንም አይነት ቅጽ መሙላት ወይም አካውንት መክፈት አያስፈልግም።',
       popularTitle: 'በብዛት የሚመረጡ ካሜራዎች',
       popularSub: 'ደንበኞቻችን በብዛት የሚመርጧቸው ካሜራዎች። ዋጋ ስለሚለዋወጥ የዛሬውን ዋጋ ይጠይቁን።',
-      reviewsTitle: 'የደንበኞች አስተያየት',
+      reviewsTitle: 'የደንበኞች አስተያየት (ከአዲስ አበባና ክልሎች)',
       reviewsNote:
         'እውነተኛ የስራ ማጣቀሻዎችን ይጠይቁን። እንደ እርስዎ ዓይነት የተገጠሙ ስራዎችን ልናሳይዎት እና ደንበኞቻችንን እንድታነጋግሩ ልናደርግ እንችላለን። እንዲሁም በፌስቡክ ገጻችን ላይ የደንበኞችን አስተያየት ማየት ይችላሉ።',
       faqTitle: 'ተደጋግመው የሚጠየቁ ጥያቄዎች',
@@ -1074,8 +1074,8 @@ export const translations = {
         a: 'በ4G / ሲም ካርድ የሚሰሩ ካሜራዎች የሞባይል ዳታ ሲም ተጠቅመው የሚሰሩ በመሆናቸው ዋይፋይ አያስፈልጋቸውም። ለሱቆች፣ ለግንባታ ቦታዎች እና ሩቅ ለሆኑ ቦታዎች ፍቱን ናቸው። በቦታው ያለው የኔትወርክ ጥንካሬ አስፈላጊ በመሆኑ አስቀድመን እንፈትሻለን።',
       },
       {
-        q: 'ካሜራዎቹን ራሳችሁ ትገጥማላችሁ?',
-        a: 'አዎ። ባለሙያ ቡድናችን አዲስ አበባ ውስጥ ያሉትን ካሜራዎች በሙሉ ራሱ ገጥሞ ዝግጁ ያደርጋል። ከአዲስ አበባ ውጭ ከሆኑ ስለ አካባቢዎ ሁኔታ በስልክ ያናግሩን።',
+        q: 'ከአዲስ አበባ ውጭ ባሉ የክልል ከተሞች ካሜራ ትገጥማላችሁ?',
+        a: 'አዎ፣ በእርግጥ! በመላው ኢትዮጵያ በሁሉም ክልሎች እንሰራለን። በባህር ዳር፣ በሀዋሳ፣ በአዳማ፣ በደብረ ዘይት/ቢሾፍቱ፣ በጅማ፣ በመቐለ እና በኢንዱስትሪ ፓርኮች በርካታ ስራዎችን በሙያ እናከናውናለን። ለቦታዎ ሁኔታ በስልክ ያናግሩን።',
       },
       {
         q: 'በሱቆች እና በፋርማሲዎች ውስጥ ካሜራ ትገጥማላችሁ?',

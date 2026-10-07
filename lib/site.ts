@@ -21,6 +21,25 @@ export const site = {
   // TODO(owner): replace with the real warranty policy (used in FAQ + solution pages).
   warrantyText:
     'Yes. Our cameras and systems come with warranty. The period depends on the camera model and is confirmed with you in writing on the quotation before installation.',
+  coverageCities: [
+    'Addis Ababa',
+    'Bahir Dar',
+    'Hawassa',
+    'Adama',
+    'Jimma',
+    'Mekelle',
+    'Debre Zeit / Bishoftu',
+  ],
+  coverageCitiesAm: [
+    'አዲስ አበባ',
+    'ባህር ዳር',
+    'ሀዋሳ',
+    'አዳማ',
+    'ጅማ',
+    'መቐለ',
+    'ደብረ ዘይት / ቢሾፍቱ',
+  ],
+  coverageSummary: 'Nationwide engineering deployments across all regions & major regional cities in Ethiopia.',
 };
 
 export function whatsappLink(message: string) {

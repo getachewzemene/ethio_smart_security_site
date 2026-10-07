@@ -12,7 +12,7 @@ export default function CorporateStatsBar() {
       icon: Camera,
       num: '5,000+',
       label: isAm ? 'የተገጠሙ ካሜራዎች' : 'Cameras Deployed',
-      desc: isAm ? 'በአዲስ አበባ ዙሪያ ለቤቶች፣ ሱቆች፣ ቢሮዎችና ፋብሪካዎች' : 'Installed across Addis Ababa homes, offices & factories',
+      desc: isAm ? 'በአዲስ አበባ እና በክልል ከተሞች ለቤቶች፣ ሱቆች፣ ቢሮዎችና ፋብሪካዎች' : 'Installed across Addis Ababa & major regional cities in Ethiopia',
     },
     {
       icon: ShieldCheck,

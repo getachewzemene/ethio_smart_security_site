@@ -7,24 +7,25 @@ import { installCategories } from '@/lib/content';
 import { installations } from '@/lib/installations';
 import { HelpBlock } from '@/components/Sections';
 import BeforeAfterComparison from '@/components/BeforeAfterComparison';
+import NationwideCoverageStrip from '@/components/NationwideCoverageStrip';
 import { useLanguage } from '@/lib/i18n';
 
 export default function InstallationsPageContent() {
   const { t, isAm } = useLanguage();
 
   const heroMessage = isAm
-    ? 'ሰላም ኢትዮ ስማርት ሴኩሪቲ፣ የሰራችኋቸውን ስራዎች አየሁ፤ ተመሳሳይ ስራ ማሰራት እፈልጋለሁ።'
-    : 'Hello Ethio Smart Security, I saw your installations. I want something similar.';
+    ? 'ሰላም ኢትዮ ስማርት ሴኩሪቲ፣ በመላው ኢትዮጵያ የሰራችኋቸውን ስራዎች አየሁ፤ ተመሳሳይ ስራ ማሰራት እፈልጋለሁ።'
+    : 'Hello Ethio Smart Security, I saw your installation projects across Ethiopia. I want something similar.';
 
   return (
     <>
       <section className="page-hero">
         <div className="wrap">
-          <h1>{isAm ? 'የተከናወኑ እውነተኛ የገጠማ ስራዎች' : 'Our CCTV installation projects'}</h1>
+          <h1>{isAm ? 'በመላው ኢትዮጵያ የተከናወኑ እውነተኛ የገጠማ ስራዎች' : 'CCTV & Security Installations Across Ethiopia'}</h1>
           <p className="lead">
             {isAm
-              ? 'ካሜራ ብቻ አንሸጥም፤ እራሳችን በአዲስ አበባ ዙሪያ ጥራት ባለው ሙያ እንገጥማለን።'
-              : "We don't only sell cameras. We install them, across Addis Ababa."}
+              ? 'ካሜራ ብቻ አንሸጥም፤ እራሳችን በአዲስ አበባ፣ ባህር ዳር፣ ሀዋሳ፣ አዳማ፣ ደብረ ዘይት፣ ጅማ፣ መቐለ እና በሁሉም ክልሎች በከፍተኛ ምህንድስና እንገጥማለን።'
+              : 'We engineer and install turnkey security systems across Ethiopia — Addis Ababa, Bahir Dar, Hawassa, Adama, Debre Zeit, Jimma, Mekelle, and all regional industrial corridors.'}
           </p>
           <CtaRow
             location="installations_hero"
@@ -33,6 +34,8 @@ export default function InstallationsPageContent() {
           />
         </div>
       </section>
+
+      <NationwideCoverageStrip />
 
       {installCategories.map((c) => {
         const cTrans = t.installCategories[c.key] || c;
