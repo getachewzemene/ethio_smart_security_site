@@ -1,12 +1,14 @@
 'use client';
 
+import Link from 'next/link';
+import { FileText } from 'lucide-react';
 import CtaRow from '@/components/CtaRow';
 import { WhyList, Steps } from '@/components/Sections';
 import { site } from '@/lib/site';
 import { useLanguage } from '@/lib/i18n';
 
 export default function AboutPageContent() {
-  const { t } = useLanguage();
+  const { t, isAm } = useLanguage();
 
   return (
     <>
@@ -27,6 +29,14 @@ export default function AboutPageContent() {
               <b>{t.actions.openInMaps}</b>
             </a>
           </p>
+          <div style={{ marginTop: 20, display: 'flex', gap: 12, flexWrap: 'wrap' }}>
+            <Link href="/company-profile" className="btn btn-solid btn-proforma">
+              <FileText size={18} /> {isAm ? 'ይፋዊ የድርጅት መገለጫ (PDF)' : 'Official Company Profile (PDF)'}
+            </Link>
+            <Link href="/proforma" className="btn btn-outline">
+              {isAm ? 'ይፋዊ ፕሮፎርማ ይጠይቁ' : 'Request Proforma Quotation'}
+            </Link>
+          </div>
         </div>
       </section>
       <section className="section alt">

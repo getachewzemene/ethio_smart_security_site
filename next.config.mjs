@@ -18,5 +18,11 @@ const nextConfig = {
       },
     ];
   },
+  async redirects() {
+    return [
+      { source: '/get-quote', destination: '/proforma', permanent: true },
+      { source: '/quote', destination: '/proforma', permanent: true },
+    ];
+  },
 };
 export default nextConfig;

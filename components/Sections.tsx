@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
+import { ShimmerImage } from './Skeleton';
 import { Play } from 'lucide-react';
 import Icon from './Icon';
 import ContactLink from './ContactLink';
@@ -76,6 +77,52 @@ export function SolutionList() {
   );
 }
 
+export function EnterpriseSolutionsGrid() {
+  const { t } = useLanguage();
+  const enterpriseSlugs = [
+    'access-control-time-attendance',
+    'smart-intercom-gate-automation',
+    'fire-alarm-smoke-detection',
+    'server-room-nvr-video-wall',
+  ];
+  const items = solutions.filter((s) => enterpriseSlugs.includes(s.slug));
+
+  return (
+    <div className="wizard-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', margin: '20px 0 0' }}>
+      {items.map((s) => {
+        const sTrans = t.solutions[s.slug] || s;
+        return (
+          <article
+            key={s.slug}
+            className="wizard-card"
+            style={{ cursor: 'default', background: '#fff' }}
+          >
+            <div className="wizard-card-top">
+              <div className="wizard-card-icon" style={{ background: '#0b1d45', color: '#fff' }}>
+                <Icon name={s.icon} size={20} />
+              </div>
+              <span style={{ fontSize: '0.75rem', fontWeight: 800, color: 'var(--green)', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
+                Enterprise
+              </span>
+            </div>
+            <strong className="wizard-card-title" style={{ fontSize: '1.05rem', marginTop: 4 }}>
+              <Link href={`/solutions/${s.slug}`}>{sTrans.title}</Link>
+            </strong>
+            <p className="wizard-card-desc" style={{ marginBottom: 14 }}>
+              {sTrans.short}
+            </p>
+            <div style={{ marginTop: 'auto', display: 'flex', gap: 10, alignItems: 'center' }}>
+              <Link href={`/solutions/${s.slug}`} className="link-btn" style={{ fontSize: '0.9rem', padding: '6px 0' }}>
+                {t.actions.learnMore} <Icon name="arrow" size={16} />
+              </Link>
+            </div>
+          </article>
+        );
+      })}
+    </div>
+  );
+}
+
 export function HelpBlock({ location = 'help_block' }: { location?: string }) {
   const { t } = useLanguage();
 
@@ -104,7 +151,7 @@ export function InstallationsPreview() {
         <div className="inst-grid">
           {shown.map((i) => (
             <figure className="inst" key={i.image}>
-              <Image src={i.image} alt={i.alt} width={i.width || 1200} height={i.height || 900} sizes="(max-width:720px) 100vw, 33vw" />
+              <ShimmerImage src={i.image} alt={i.alt} width={i.width || 1200} height={i.height || 900} sizes="(max-width:720px) 100vw, 33vw" />
               <div><h3>{i.title}</h3><p>{i.location}</p></div>
             </figure>
           ))}

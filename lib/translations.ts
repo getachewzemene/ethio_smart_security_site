@@ -62,6 +62,7 @@ export const translations = {
       solutions: 'Solutions',
       services: 'Services',
       installations: 'Installations',
+      proforma: 'Request Proforma',
       about: 'About',
       contact: 'Contact',
     },
@@ -72,6 +73,9 @@ export const translations = {
       whatsapp: 'WhatsApp',
       telegram: 'Telegram',
       talkToUs: 'Talk to Us Now',
+      requestProforma: 'Request Official Proforma',
+      downloadProfile: 'Company Profile (PDF)',
+      bookAssessment: 'Book Free On-Site Survey',
       getRecommendation: 'Get a recommendation',
       learnMore: 'Learn more',
       seeRightSetup: 'See the right setup',
@@ -277,6 +281,131 @@ export const translations = {
         features: ['Site visit and camera placement plan', 'Proper cabling and recorder setup', 'Storage sized for your recording needs', 'Phone viewing set up for you and your team', 'After-sales support'],
         notes: ['The price depends on the number of cameras, camera type, cabling distance and installation complexity. We quote after understanding the site.'],
         waMessage: 'Hello Ethio Smart Security, I need a complete CCTV system for my business. Can we talk?',
+      },
+      'access-control-time-attendance': {
+        title: 'Access Control & Time Attendance',
+        short: 'Biometric fingerprint, RFID and facial recognition for offices and staff tracking.',
+        cta: 'Request Access Control Quote',
+        seoTitle: 'Biometric Access Control & Time Attendance in Addis Ababa, Ethiopia',
+        seoDescription:
+          'Fingerprint, RFID card, and facial recognition access control systems for offices, commercial buildings, and factories in Addis Ababa. Automated employee time attendance.',
+        intro:
+          'Control who enters your premises, secure sensitive rooms, and automatically track employee attendance with modern biometric and RFID access terminals.',
+        problem:
+          'Manual sign-in books and physical keys are easily copied, lost, or forged. Access control gives you digital access logs, restricts unauthorized visitors, and automates monthly HR attendance reports.',
+        goodFor: [
+          'Corporate offices and headquarters',
+          'Server rooms and cash handling offices',
+          'Commercial building turnstiles and gates',
+          'Factories and industrial warehouses',
+          'Clinics, pharmacies, and labs',
+        ],
+        features: [
+          'High-speed facial recognition and fingerprint sensor',
+          'RFID smart card and PIN code entry options',
+          'Electric magnetic locks and drop-bolt hardware',
+          'Exportable monthly employee attendance reports (Excel/PDF)',
+          'Battery backup power for continuous door locking during outages',
+          'Emergency break-glass override for fire safety compliance',
+        ],
+        notes: [
+          'Can be installed on glass doors, wooden doors, steel doors, and security turnstiles. We recommend an on-site survey to measure door frames and power lines.',
+        ],
+        waMessage:
+          'Hello Ethio Smart Security, I want an Access Control & Time Attendance system for our office/facility. Please advise.',
+      },
+      'smart-intercom-gate-automation': {
+        title: 'Smart Video Intercoms & Gate Motors',
+        short: 'Villa and compound video doorbells with remote mobile gate opening and visitor screening.',
+        cta: 'Ask About Smart Intercoms',
+        seoTitle: 'Smart Video Intercom & Automatic Gate Motors in Addis Ababa',
+        seoDescription:
+          'Smart video doorbells, villa video intercoms, security guard house terminals, and remote motorized gate opening in Addis Ababa. Screen visitors from anywhere on your phone.',
+        intro:
+          'Screen visitors before opening your gate, talk with guests in HD audio/video, and open main doors or motorized gates directly from your smartphone or indoor touch monitor.',
+        problem:
+          'Having to walk to the gate in the dark or during rain to see who is knocking exposes your compound to risk. A video intercom lets you verify visitor identity safely from inside or while away.',
+        goodFor: [
+          'Residential villas and G+2 homes in Addis Ababa',
+          'Gated compounds and diplomatic residences',
+          'Commercial building main receptions',
+          'Apartment buildings and shared compounds',
+        ],
+        features: [
+          'HD video doorbell camera with night vision',
+          'Touchscreen indoor station monitor (7-inch or 10-inch)',
+          'Remote mobile app gate unlocking from anywhere in the world',
+          'Integration with motorized slide/swing gates and magnetic strikes',
+          'Guard booth to residence intercom communication',
+          'Snapshot recording of all missed doorbell rings',
+        ],
+        notes: [
+          'We install wired IP intercoms (most stable for new builds) and wireless/Wi-Fi options for finished villas where running new conduit is difficult.',
+        ],
+        waMessage:
+          'Hello Ethio Smart Security, I am interested in a Smart Video Intercom & Gate Opener system. Please provide details.',
+      },
+      'fire-alarm-smoke-detection': {
+        title: 'Fire Alarm & Smoke Detection',
+        short: 'Photoelectric smoke sensors, heat detectors, and alarm sirens with emergency alerts.',
+        cta: 'Book Fire Safety Survey',
+        seoTitle: 'Fire Alarm & Smoke Detection Systems in Addis Ababa, Ethiopia',
+        seoDescription:
+          'Certified smoke detectors, heat sensors, manual call points, and fire alarm control panels in Addis Ababa for buildings, warehouses, and factories. Early fire warning.',
+        intro:
+          'Early detection saves lives and protects inventory. Our fire detection systems detect smoke and extreme heat spikes within seconds, triggering loud sirens and sending instant alerts.',
+        problem:
+          'Electrical shorts and overheated equipment can start small smoldering fires at night when nobody is present. By the time flames are visible outside, extensive damage is done.',
+        goodFor: [
+          'Factories, chemical storage, and industrial warehouses',
+          'Commercial plazas, supermarkets, and shopping malls',
+          'Pharmacies, server rooms, and battery banks',
+          'Hotels, guest houses, and residential compounds',
+        ],
+        features: [
+          'Optical photoelectric smoke detection for early smoldering fire warning',
+          'Fixed temperature and rate-of-rise thermal heat sensors',
+          'Central fire alarm control panel with zoned building map',
+          'Loud strobe siren sounders to evacuate premises immediately',
+          'Manual emergency call break-glass units at stairwells and exits',
+          'Optional integration with CCTV cameras and mobile phone dialer',
+        ],
+        notes: [
+          'Meets commercial building safety standards in Ethiopia. Includes regular inspection protocols and annual sensor maintenance.',
+        ],
+        waMessage:
+          'Hello Ethio Smart Security, I need a Fire Alarm & Smoke Detection system for our building/facility. Please quote.',
+      },
+      'server-room-nvr-video-wall': {
+        title: 'Server Room & NVR Video Walls',
+        short: 'Rack-mounted NVRs, structured CAT6 cabling, server cabinets, and guard room video walls.',
+        cta: 'Request Video Wall Design',
+        seoTitle: 'Server Room CCTV, Structured Cabling & Video Walls in Addis Ababa',
+        seoDescription:
+          'Rack-mount NVRs, server cabinets, structured CAT6 cabling, and multi-display security command video walls in Addis Ababa for commercial enterprises and industrial plants.',
+        intro:
+          'For enterprise facilities requiring 16 to 128+ cameras, we engineer central command rooms with server rack NVR installations, organized patch panels, and continuous multi-screen video walls.',
+        problem:
+          'Informal installations leave a mess of unlabelled loose cables, hot overheating desktop recorders, and unstable power feeds. Enterprise facilities require server cabinets, structured CAT6 cabling, and organized guard room monitoring.',
+        goodFor: [
+          'Corporate headquarters and multi-storey plazas',
+          'Industrial manufacturing plants and industrial parks (Dukem, Bole Lemi)',
+          'Logistics hubs and distribution centers',
+          'Commercial banks, hotels, and universities',
+        ],
+        features: [
+          '19-inch rack-mounted enterprise NVRs with hot-swappable HDD bays',
+          'Structured CAT6/CAT6A cabling with numbered patch panel termination',
+          'Dedicated security guard room HDMI/VGA multi-display video wall',
+          'Centralized online UPS power backup with surge suppression',
+          'Clean cable management, trunking, and ventilated equipment cabinets',
+          'Role-based access permissions for security staff vs senior executives',
+        ],
+        notes: [
+          'We conduct detailed site blueprint reviews and cable distance calculations to ensure gigabit bandwidth and clean airflow inside server racks.',
+        ],
+        waMessage:
+          'Hello Ethio Smart Security, we require an enterprise Server Room NVR & Video Wall system. Please schedule a technical consultation.',
       },
     } as Record<string, SolutionTranslation>,
     useCases: {
@@ -485,6 +614,7 @@ export const translations = {
       solutions: 'መፍትሔዎች',
       services: 'አገልግሎቶች',
       installations: 'የተከናወኑ ስራዎች',
+      proforma: 'ፕሮፎርማ ጠይቁ',
       about: 'ስለ እኛ',
       contact: 'ያግኙን',
     },
@@ -495,6 +625,9 @@ export const translations = {
       whatsapp: 'ዋትስአፕ',
       telegram: 'ቴሌግራም',
       talkToUs: 'አሁኑኑ ያነጋግሩን',
+      requestProforma: 'ህጋዊ ፕሮፎርማ ይጠይቁ',
+      downloadProfile: 'የድርጅት መገለጫ (PDF)',
+      bookAssessment: 'የቦታው ቅኝት ያስይዙ',
       getRecommendation: 'ተስማሚውን መፍትሔ ይጠይቁ',
       learnMore: 'ተጨማሪ ያንብቡ',
       seeRightSetup: 'ተስማሚውን አቀማመጥ ይመልከቱ',
@@ -694,6 +827,122 @@ export const translations = {
         features: ['የቦታ ምልከታ እና የካሜራ አቀማመጥ እቅድ', 'ጥራት ያለው የገመድ ዝርጋታ እና የመቅረጫ ዝግጅት', 'እንደ ፍላጎትዎ መጠን የተመጠነ የቪዲዮ ማከማቻ (Storage)', 'ለእርስዎ እና ለቡድንዎ በስልክ መከታተያ ማስተካከል', 'አስተማማኝ የድህረ-ገጠማ ድጋፍ'],
         notes: ['ዋጋው እንደ ካሜራው ብዛት፣ የካሜራ አይነት፣ የገመድ ርቀት እና የገጠማው ውስብስብነት ይወሰናል። ቦታውን ከተረዳን በኋላ ግልጽ ዋጋ እንሰጣለን።'],
         waMessage: 'ሰላም ኢትዮ ስማርት ሴኩሪቲ፣ ለድርጅቴ የተሟላ የሲሲቲቪ ሲስተም ገጠማ እፈልጋለሁ። ልናወራ እንችላለን?',
+      },
+      'access-control-time-attendance': {
+        title: 'የጣት አሻራ እና የፊት መለያ (Access Control)',
+        short: 'የሰራተኞች መግቢያና መውጫ መቆጣጠሪያ፣ የሰዓት መመዝገቢያ እና የቢሮ በሮች ደህንነት።',
+        cta: 'ተስማሚ ዋጋ ይጠይቁ',
+        seoTitle: 'የጣት አሻራ እና የፊት መለያ ሲስተሞች በአዲስ አበባ',
+        seoDescription:
+          'የጣት አሻራ፣ የካርድ እና የፊት መለያ የበር መቆጣጠሪያ እና የሰራተኞች የሰዓት መመዝገቢያ ሲስተሞች በአዲስ አበባ።',
+        intro:
+          'ወደ ድርጅትዎ፣ ቢሮዎ ወይም ሰርቨር ክፍልዎ ማን እንደሚገባ ይቆጣጠሩ፤ የሰራተኞችን የስራ መግቢያና መውጫ ሰዓት በዲጂታል መንገድ ይመዝግቡ።',
+        problem:
+          'በወረቀት ላይ ሰራተኞችን መመዝገብ እና ተራ ቁልፍ መጠቀም ለስርቆት እና ለመረጃ መዛባት ያጋልጣል። ዘመናዊ የአክሰስ ኮንትሮል ሲስተም ህጋዊ ሰራተኞች ብቻ እንዲገቡ ያደርጋል፤ የወርሃዊ ሪፖርት በኮምፒውተር ይሰጣል።',
+        goodFor: [
+          'የድርጅት ቢሮዎች እና ዋና መሥሪያ ቤቶች',
+          'የሰርቨር ክፍሎች እና የካዝና ክፍሎች',
+          'የፋብሪካ እና የመጋዘን መግቢያ በሮች',
+          'ክሊኒኮች፣ ፋርማሲዎች እና ላቦራቶሪዎች',
+        ],
+        features: [
+          'ፈጣን የፊት መለያ እና የጣት አሻራ አንባቢ',
+          'የካርድ (RFID) እና የሚስጥር ቁጥር (PIN) አማራጭ',
+          'ጠንካራ ማግኔቲክ የመቆለፊያ ሲስተም',
+          'የወርሃዊ ሰራተኞች መገኘት ሪፖርት (Excel/PDF)',
+          'መብራት ሲጠፋ በባትሪ የሚሰራ',
+          'ለእሳት አደጋ ጊዜ የአደጋ ጊዜ መክፈቻ ቁልፍ',
+        ],
+        notes: ['በመስታወት፣ በእንጨትና በብረት በሮች ላይ በቀላሉ ይገጠማል። የቦታው ቅኝት በማድረግ የበር ፍሬሞችን እንለካለን።'],
+        waMessage:
+          'ሰላም ኢትዮ ስማርት ሴኩሪቲ፣ የጣት አሻራ እና የፊት መለያ (Access Control) ሲስተም ለቢሯችን እፈልጋለሁ። እባክዎ ተስማሚ ሲስተም ይምከሩኝ።',
+      },
+      'smart-intercom-gate-automation': {
+        title: 'ስማርት ቪዲዮ ኢንተርኮም እና የበር መቆጣጠሪያ',
+        short: 'የቪላ እና የግቢ ቪዲዮ ደውል፣ በስልክ በር መክፈቻ እና የእንግዳ ማጣሪያ።',
+        cta: 'ስለ ኢንተርኮም ይጠይቁ',
+        seoTitle: 'ስማርት ቪዲዮ ኢንተርኮም እና አውቶማቲክ የበር መክፈቻ በአዲስ አበባ',
+        seoDescription:
+          'ስማርት የቪዲዮ ደውል፣ ለቪላ ቤቶች የሚሆን የቤት ውስጥ ሞኒተር እና በስልክ በር መክፈቻ ሲስተም በአዲስ አበባ።',
+        intro:
+          'በሩን ከመክፈትዎ በፊት ማን እንደመጣ በቪዲዮ ይመልከቱ፣ በድምጽ ያነጋግሩ፤ ከየትኛውም ቦታ ሆነው በስልክዎ የዋናውን በር ቆልፍ ይክፈቱ።',
+        problem:
+          'በጨለማ ወይም በዝናብ ወቅት ወደ ውጭ በር መሄድ ለደህንነት አስጊ ነው። ቪዲዮ ኢንተርኮም ከቤትዎ ሳይወጡ ወይም ከቢሮ ሆነው በስልክዎ እንግዳውን አይተው በር እንዲከፍቱ ያስችልዎታል።',
+        goodFor: [
+          'ለመኖሪያ ቪላዎች እና G+2 ቤቶች',
+          'የዲፕሎማቲክ እና የግል ግቢዎች',
+          'የንግድ ህንፃ እንግዳ መቀበያዎች',
+          'የአፓርታማ ህንፃዎች',
+        ],
+        features: [
+          'ጥራት ያለው የሌሊት እይታ ካሜራ ያለው ደውል',
+          'ባለ 7 ወይም 10 ኢንች የቤት ውስጥ ንክኪ ሞኒተር',
+          'ከየትኛውም ቦታ በስልክ በር የመክፈት ችሎታ',
+          'ከኤሌክትሪክ በር ሞተር እና ከማግኔት ቆልፍ ጋር የሚጣመር',
+          'ከጥበቃ ክፍል ወደ ቤት ውስጥ የመደወል ድጋፍ',
+          'ያልተመለሱ ጥሪዎችን ፎቶ አንስቶ የማስቀረት አቅም',
+        ],
+        notes: ['ለአዳዲስ ህንፃዎች በገመድ (IP) የሚሰራ፤ ለተጠናቀቁ ቤቶች ደግሞ ያለ ገመድ (Wi-Fi) አማራጭ አለን።'],
+        waMessage:
+          'ሰላም ኢትዮ ስማርት ሴኩሪቲ፣ ስማርት ቪዲዮ ኢንተርኮም እና የበር መክፈቻ እፈልጋለሁ። እባክዎ መረጃ ይስጡኝ።',
+      },
+      'fire-alarm-smoke-detection': {
+        title: 'የእሳት እና የጢስ አደጋ ማስጠንቀቂያ (Fire Alarm)',
+        short: 'የጢስ መለያ ሴንሰሮች፣ የሙቀት መለያዎች እና የማስጠንቀቂያ ሳይረን ከስልክ ማስጠንቀቂያ ጋር።',
+        cta: 'የእሳት አደጋ ጥናት ያስይዙ',
+        seoTitle: 'የእሳት እና የጢስ አደጋ መከላከያ ሲስተም በአዲስ አበባ',
+        seoDescription:
+          'የጢስ እና የሙቀት መለያ ሴንሰሮች፣ የቁጥጥር ፓነል እና የማስጠንቀቂያ ሳይረን ለፋብሪካዎችና ህንፃዎች በአዲስ አበባ።',
+        intro:
+          'አደጋን ቀድሞ ማወቅ ህይወትንና ንብረትን ያድናል። የጢስ እና የሙቀት ሴንሰሮቻችን እሳት ከመቀጣጠሉ በፊት በሰከንዶች ውስጥ በመለየት ከፍተኛ ሳይረን ያሰማሉ፤ በስልክም ያሳውቃሉ።',
+        problem:
+          'የኤሌክትሪክ ሾርት እና የሙቀት መብዛት ሌሊት ሰው በሌለበት ሰዓት እሳት ሊያነሱ ይችላሉ። እሳቱ ከውጭ እስኪታይ ድረስ ከፍተኛ ጉዳት ይደርሳል። ቀድሞ የሚያስጠነቅቅ ሲስተም ወሳኝ ነው።',
+        goodFor: [
+          'ፋብሪካዎች እና የዕቃ መጋዘኖች',
+          'የንግድ ማዕከላት እና ሱፐርማርኬቶች',
+          'የሰርቨር ክፍሎች እና የባትሪ ባንኮች',
+          'ሆቴሎች እና መኖሪያ ግቢዎች',
+        ],
+        features: [
+          'ቀድሞ ጢስን የሚለይ የፎቶኤሌክትሪክ ሴንሰር',
+          'ድንገተኛ የሙቀት መጨመርን የሚለይ ሴንሰር',
+          'የቦታውን ካርታ የሚያሳይ ማዕከላዊ የቁጥጥር ፓነል',
+          'ሰዎችን በፍጥነት የሚያስጠነቅቅ ከፍተኛ የሳይረን ድምጽ',
+          'የእጅ የአደጋ ጊዜ ማስጠንቀቂያ መጫኛ (Break-glass)',
+          'ከሲሲቲቪ እና ከስልክ ደዋይ ጋር የማገናኘት አማራጭ',
+        ],
+        notes: ['በኢትዮጵያ ለንግድ ህንፃዎች የሚፈለጉትን የደህንነት መስፈርቶች ያሟላል።'],
+        waMessage:
+          'ሰላም ኢትዮ ስማርት ሴኩሪቲ፣ የእሳት እና የጢስ አደጋ ማስጠንቀቂያ ሲስተም ለድርጅታችን እፈልጋለሁ። ዋጋ ስንት ነው?',
+      },
+      'server-room-nvr-video-wall': {
+        title: 'ሰርቨር ሩም እና ሴንትራል NVR ቪዲዮ ወል',
+        short: 'በራክ ላይ የሚገጠሙ NVRዎች፣ የCAT6 ኔትወርክ ዝርጋታ፣ የሰርቨር ካቢኔቶች እና የጥበቃ ክፍል ቪዲዮ ወል።',
+        cta: 'የቪዲዮ ወል እቅድ ይጠይቁ',
+        seoTitle: 'የሰርቨር ሩም ሲሲቲቪ ራክ፣ ኔትወርክ እና ቪዲዮ ወል በአዲስ አበባ',
+        seoDescription:
+          'ለድርጅቶች እና ለኢንዱስትሪዎች የተሟላ የሰርቨር ሩም NVR፣ የተስተካከለ CAT6 ኔትወርክ እና የጥበቃ ክፍል ማሳያ ቪዲዮ ወል ገጠማ።',
+        intro:
+          'ከ16 እስከ 128+ ካሜራዎች ላሏቸው ትላልቅ ድርጅቶችና ፋብሪካዎች፣ በሰርቨር ራክ ውስጥ የሚቀመጡ NVRዎችን፣ የተስተካከለ ኔትወርክን እና የጥበቃ ክፍል ማሳያ ቪዲዮ ወልን በምህንድስና ደረጃ እንገጥማለን።',
+        problem:
+          'የተዘበራረቁ ገመዶች፣ የሚግሉ ተራ ዴስክቶፕ መቅረጫዎች እና ያልተረጋጋ የኤሌክትሪክ ኃይል ሲስተሙ ቶሎ እንዲበላሽ ያደርጋሉ። ትላልቅ ተቋማት የተደራጀ የሰርቨር ካቢኔት እና የተለየ የጥበቃ ክፍል እይታ ይፈልጋሉ።',
+        goodFor: [
+          'የድርጅት ዋና መሥሪያ ቤቶች እና የንግድ ህንፃዎች',
+          'ፋብሪካዎች እና የኢንዱስትሪ ፓርኮች (ዱከም፣ ቦሌ ሌሚ)',
+          'የሎጂስቲክስ እና የጭነት ማዕከላት',
+          'ባንኮች፣ ሆቴሎች እና ዩኒቨርሲቲዎች',
+        ],
+        features: [
+          'በራክ ላይ የሚገጠሙ ባለከፍተኛ አቅም NVRዎች',
+          'በቁጥር የተለዩ የCAT6 ኔትወርክ ፓች ፓነል ዝርጋታዎች',
+          'ለጥበቃ ክፍል የሚሆን ባለብዙ-ስክሪን HDMI/VGA ቪዲዮ ወል',
+          'ማዕከላዊ የኦንላይን UPS ባትሪ ባክአፕ',
+          'ንጹህ የኬብል ማኔጅመንት እና አየር የሚያዘዋውር ካቢኔት',
+          'ለጥበቃ ሰራተኞች እና ለአስተዳዳሪዎች የተለያየ የይለፍ ቃል ፈቃድ',
+        ],
+        notes: ['ቦታውን እና የህንፃውን ፕላን በማየት የኔትወርክ ባንድዊድዝ እና የኬብል ርዝመት ስሌት እንሰራለን።'],
+        waMessage:
+          'ሰላም ኢትዮ ስማርት ሴኩሪቲ፣ የሰርቨር ሩም NVR እና የቪዲዮ ወል ሲስተም ለድርጅታችን እንፈልጋለን። የቴክኒክ ባለሙያ ያነጋግረን።',
       },
     } as Record<string, SolutionTranslation>,
     useCases: {

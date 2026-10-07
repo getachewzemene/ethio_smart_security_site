@@ -1,8 +1,8 @@
 'use client';
 
-import Image from 'next/image';
 import CtaRow from '@/components/CtaRow';
 import ContactLink from '@/components/ContactLink';
+import { ShimmerImage } from '@/components/Skeleton';
 import { installCategories } from '@/lib/content';
 import { installations } from '@/lib/installations';
 import { HelpBlock } from '@/components/Sections';
@@ -48,7 +48,7 @@ export default function InstallationsPageContent() {
                 <div className="inst-grid">
                   {items.map((i) => (
                     <figure className="inst" key={i.image}>
-                      <Image
+                      <ShimmerImage
                         src={i.image}
                         alt={i.alt}
                         width={i.width || 1200}

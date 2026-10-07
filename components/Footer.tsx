@@ -42,8 +42,13 @@ export default function Footer() {
             ))}
           </ul>
           <p className="footer-h" style={{ marginTop: 20 }}>
-            <Link href="/services">{t.nav.services}</Link>
+            {isAm ? 'ይፋዊ ሰነዶች እና ፕሮፎርማ' : 'Corporate & Procurement'}
           </p>
+          <ul>
+            <li><Link href="/proforma">{isAm ? 'ህጋዊ ፕሮፎርማ ይጠይቁ' : 'Request Proforma / Quote'}</Link></li>
+            <li><Link href="/company-profile">{isAm ? 'የድርጅት መገለጫ (Profile)' : 'Company Profile'}</Link></li>
+            <li><Link href="/services">{t.nav.services}</Link></li>
+          </ul>
           <p className="footer-h" style={{ marginTop: 20 }}>
             {isAm ? 'የማሳያ ቪዲዮዎቻችንን ይከታተሉ' : 'Follow our demos'}
           </p>

@@ -23,7 +23,20 @@ export const metadata: Metadata = {
     images: [{ url: '/og.png', width: 1200, height: 630, alt: 'Ethio Smart Security & CCTV' }],
   },
   twitter: { card: 'summary_large_image', title: 'Ethio Smart Security & CCTV – Addis Ababa', description, images: ['/og.png'] },
-  robots: { index: true, follow: true },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  verification: {
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || undefined,
+  },
   formatDetection: { telephone: true },
 };
 

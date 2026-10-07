@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, FileText } from 'lucide-react';
 import ContactLink from './ContactLink';
 import { site } from '@/lib/site';
 import { useLanguage, LanguageSwitch } from '@/lib/i18n';
@@ -17,6 +17,7 @@ export default function Header() {
     { href: '/solutions', label: t.nav.solutions },
     { href: '/services', label: t.nav.services },
     { href: '/installations', label: t.nav.installations },
+    { href: '/proforma', label: t.nav.proforma || (isAm ? 'ፕሮፎርማ' : 'Proforma') },
     { href: '/about', label: t.nav.about },
     { href: '/contact', label: t.nav.contact },
   ];
@@ -39,8 +40,11 @@ export default function Header() {
         </nav>
         <div className="header-cta">
           <LanguageSwitch variant="pill" />
+          <Link href="/proforma" className="btn btn-proforma only-desktop" style={{ minHeight: 40, padding: '0 14px', fontSize: '0.88rem', gap: 6 }}>
+            <FileText size={15} />
+            <span>{isAm ? 'ፕሮፎርማ' : 'Proforma'}</span>
+          </Link>
           <ContactLink kind="call" location="header" label={site.phoneDisplay} size="md" />
-          <ContactLink kind="whatsapp" location="header" label={t.actions.whatsapp} className="only-desktop" />
           <button className="menu-btn" aria-label={open ? 'Close menu' : 'Open menu'} aria-expanded={open} onClick={() => setOpen(!open)}>
             {open ? <X size={26} /> : <Menu size={26} />}
           </button>

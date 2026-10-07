@@ -8,12 +8,14 @@ export const site = {
   phoneDisplay: '0945-282035',
   phoneTel: '+251945282035',
   whatsappNumber: '251945282035',
+  email: 'info@ethiosmartsecurity.com',
+  tinText: 'VAT & TIN registered business. Official proforma invoices and receipts issued.',
   telegramUrl: env(process.env.NEXT_PUBLIC_TELEGRAM_URL, 'https://t.me/+251945282035'),
   tiktokUrl: env(process.env.NEXT_PUBLIC_TIKTOK_URL, 'https://www.tiktok.com/'),
   facebookUrl: env(process.env.NEXT_PUBLIC_FACEBOOK_URL, 'https://www.facebook.com/'),
   address: 'Megenagna, near Lem Hotel / Fenasi Building, Addis Ababa, Ethiopia',
   mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Lem+Hotel+Megenagna+Addis+Ababa',
-  hours: 'Call or WhatsApp any time; we reply as soon as we can.',
+  hours: 'Monday – Saturday: 8:30 AM – 6:30 PM; Emergency & corporate support available 24/7.',
   // Only shown on the site as a proof point secondary to real installs.
   followers: { tiktok: '46K+', facebook: '7K+' },
   // TODO(owner): replace with the real warranty policy (used in FAQ + solution pages).

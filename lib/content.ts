@@ -153,6 +153,171 @@ export const solutions: Solution[] = [
     useCases: ['office', 'factory', 'shop'],
     waMessage: 'Hello Ethio Smart Security, I need a complete CCTV system for my business. Can we talk?',
   },
+  {
+    slug: 'access-control-time-attendance',
+    icon: 'fingerprint',
+    title: 'Access Control & Time Attendance',
+    short: 'Biometric fingerprint, RFID and facial recognition for offices and staff tracking.',
+    cta: 'Request Access Control Quote',
+    seoTitle: 'Biometric Access Control & Time Attendance in Addis Ababa, Ethiopia',
+    seoDescription:
+      'Fingerprint, RFID card, and facial recognition access control systems for offices, commercial buildings, and factories in Addis Ababa. Automated employee time attendance.',
+    keywords: [
+      'access control Ethiopia',
+      'biometric attendance Addis Ababa',
+      'fingerprint door lock Addis Ababa',
+      'time attendance system Ethiopia',
+      'RFID door access Ethiopia',
+    ],
+    intro:
+      'Control who enters your premises, secure sensitive rooms, and automatically track employee attendance with modern biometric and RFID access terminals.',
+    problem:
+      'Manual sign-in books and physical keys are easily copied, lost, or forged. Access control gives you digital access logs, restricts unauthorized visitors, and automates monthly HR attendance reports.',
+    goodFor: [
+      'Corporate offices and headquarters',
+      'Server rooms and cash handling offices',
+      'Commercial building turnstiles and gates',
+      'Factories and industrial warehouses',
+      'Clinics, pharmacies, and labs',
+    ],
+    features: [
+      'High-speed facial recognition and fingerprint sensor',
+      'RFID smart card and PIN code entry options',
+      'Electric magnetic locks and drop-bolt hardware',
+      'Exportable monthly employee attendance reports (Excel/PDF)',
+      'Battery backup power for continuous door locking during outages',
+      'Emergency break-glass override for fire safety compliance',
+    ],
+    notes: [
+      'Can be installed on glass doors, wooden doors, steel doors, and security turnstiles. We recommend an on-site survey to measure door frames and power lines.',
+    ],
+    useCases: ['office', 'factory', 'pharmacy', 'shop'],
+    waMessage:
+      'Hello Ethio Smart Security, I want an Access Control & Time Attendance system for our office/facility. Please advise.',
+  },
+  {
+    slug: 'smart-intercom-gate-automation',
+    icon: 'bell',
+    title: 'Smart Video Intercoms & Gate Motors',
+    short: 'Villa and compound video doorbells with remote mobile gate opening and visitor screening.',
+    cta: 'Ask About Smart Intercoms',
+    seoTitle: 'Smart Video Intercom & Automatic Gate Motors in Addis Ababa',
+    seoDescription:
+      'Smart video doorbells, villa video intercoms, security guard house terminals, and remote motorized gate opening in Addis Ababa. Screen visitors from anywhere on your phone.',
+    keywords: [
+      'video intercom Addis Ababa',
+      'automatic gate motor Ethiopia',
+      'smart doorbell Addis Ababa',
+      'compound intercom system Ethiopia',
+      'remote gate opener Addis Ababa',
+    ],
+    intro:
+      'Screen visitors before opening your gate, talk with guests in HD audio/video, and open main doors or motorized gates directly from your smartphone or indoor touch monitor.',
+    problem:
+      'Having to walk to the gate in the dark or during rain to see who is knocking exposes your compound to risk. A video intercom lets you verify visitor identity safely from inside or while away.',
+    goodFor: [
+      'Residential villas and G+2 homes in Addis Ababa',
+      'Gated compounds and diplomatic residences',
+      'Commercial building main receptions',
+      'Apartment buildings and shared compounds',
+    ],
+    features: [
+      'HD video doorbell camera with night vision',
+      'Touchscreen indoor station monitor (7-inch or 10-inch)',
+      'Remote mobile app gate unlocking from anywhere in the world',
+      'Integration with motorized slide/swing gates and magnetic strikes',
+      'Guard booth to residence intercom communication',
+      'Snapshot recording of all missed doorbell rings',
+    ],
+    notes: [
+      'We install wired IP intercoms (most stable for new builds) and wireless/Wi-Fi options for finished villas where running new conduit is difficult.',
+    ],
+    useCases: ['home', 'office', 'factory'],
+    waMessage:
+      'Hello Ethio Smart Security, I am interested in a Smart Video Intercom & Gate Opener system. Please provide details.',
+  },
+  {
+    slug: 'fire-alarm-smoke-detection',
+    icon: 'flame',
+    title: 'Fire Alarm & Smoke Detection',
+    short: 'Photoelectric smoke sensors, heat detectors, and alarm sirens with emergency alerts.',
+    cta: 'Book Fire Safety Survey',
+    seoTitle: 'Fire Alarm & Smoke Detection Systems in Addis Ababa, Ethiopia',
+    seoDescription:
+      'Certified smoke detectors, heat sensors, manual call points, and fire alarm control panels in Addis Ababa for buildings, warehouses, and factories. Early fire warning.',
+    keywords: [
+      'fire alarm system Ethiopia',
+      'smoke detector Addis Ababa',
+      'fire alarm installation Addis Ababa',
+      'warehouse fire detection Ethiopia',
+      'building fire safety Addis Ababa',
+    ],
+    intro:
+      'Early detection saves lives and protects inventory. Our fire detection systems detect smoke and extreme heat spikes within seconds, triggering loud sirens and sending instant alerts.',
+    problem:
+      'Electrical shorts and overheated equipment can start small smoldering fires at night when nobody is present. By the time flames are visible outside, extensive damage is done.',
+    goodFor: [
+      'Factories, chemical storage, and industrial warehouses',
+      'Commercial plazas, supermarkets, and shopping malls',
+      'Pharmacies, server rooms, and battery banks',
+      'Hotels, guest houses, and residential compounds',
+    ],
+    features: [
+      'Optical photoelectric smoke detection for early smoldering fire warning',
+      'Fixed temperature and rate-of-rise thermal heat sensors',
+      'Central fire alarm control panel with zoned building map',
+      'Loud strobe siren sounders to evacuate premises immediately',
+      'Manual emergency call break-glass units at stairwells and exits',
+      'Optional integration with CCTV cameras and mobile phone dialer',
+    ],
+    notes: [
+      'Meets commercial building safety standards in Ethiopia. Includes regular inspection protocols and annual sensor maintenance.',
+    ],
+    useCases: ['factory', 'office', 'pharmacy', 'shop'],
+    waMessage:
+      'Hello Ethio Smart Security, I need a Fire Alarm & Smoke Detection system for our building/facility. Please quote.',
+  },
+  {
+    slug: 'server-room-nvr-video-wall',
+    icon: 'monitor',
+    title: 'Server Room & NVR Video Walls',
+    short: 'Rack-mounted NVRs, structured CAT6 cabling, server cabinets, and guard room video walls.',
+    cta: 'Request Video Wall Design',
+    seoTitle: 'Server Room CCTV, Structured Cabling & Video Walls in Addis Ababa',
+    seoDescription:
+      'Rack-mount NVRs, server cabinets, structured CAT6 cabling, and multi-display security command video walls in Addis Ababa for commercial enterprises and industrial plants.',
+    keywords: [
+      'CCTV video wall Addis Ababa',
+      'server room CCTV rack Ethiopia',
+      'structured cabling Addis Ababa',
+      'NVR command center Ethiopia',
+      'security guard room monitors Addis Ababa',
+    ],
+    intro:
+      'For enterprise facilities requiring 16 to 128+ cameras, we engineer central command rooms with server rack NVR installations, organized patch panels, and continuous multi-screen video walls.',
+    problem:
+      'Informal installations leave a mess of unlabelled loose cables, hot overheating desktop recorders, and unstable power feeds. Enterprise facilities require server cabinets, structured CAT6 cabling, and organized guard room monitoring.',
+    goodFor: [
+      'Corporate headquarters and multi-storey plazas',
+      'Industrial manufacturing plants and industrial parks (Dukem, Bole Lemi)',
+      'Logistics hubs and distribution centers',
+      'Commercial banks, hotels, and universities',
+    ],
+    features: [
+      '19-inch rack-mounted enterprise NVRs with hot-swappable HDD bays',
+      'Structured CAT6/CAT6A cabling with numbered patch panel termination',
+      'Dedicated security guard room HDMI/VGA multi-display video wall',
+      'Centralized online UPS power backup with surge suppression',
+      'Clean cable management, trunking, and ventilated equipment cabinets',
+      'Role-based access permissions for security staff vs senior executives',
+    ],
+    notes: [
+      'We conduct detailed site blueprint reviews and cable distance calculations to ensure gigabit bandwidth and clean airflow inside server racks.',
+    ],
+    useCases: ['factory', 'office'],
+    waMessage:
+      'Hello Ethio Smart Security, we require an enterprise Server Room NVR & Video Wall system. Please schedule a technical consultation.',
+  },
 ];
 
 export type UseCase = {
