@@ -17,22 +17,6 @@ export default function CalculatorPage() {
       {/* Dedicated Page Hero */}
       <section className="page-hero" style={{ background: '#07122b', color: '#fff', padding: '50px 0 40px' }}>
         <div className="wrap">
-          <div style={{ marginBottom: 16 }}>
-            <Link
-              href="/"
-              style={{
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: 6,
-                color: '#5dffc4',
-                fontSize: '0.88rem',
-                fontWeight: 700,
-                textDecoration: 'none',
-              }}
-            >
-              <ArrowLeft size={16} /> Back to Home
-            </Link>
-          </div>
           <h1 style={{ color: '#fff', fontSize: 'clamp(1.8rem, 4vw, 2.6rem)', margin: '0 0 12px' }}>
             Interactive CCTV Storage & System Builder
           </h1>

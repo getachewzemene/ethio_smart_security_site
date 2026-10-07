@@ -31,9 +31,6 @@ export default function CompanyProfileContent() {
     <>
       <section className="page-hero">
         <div className="wrap">
-          <div className="crumbs">
-            <Link href="/">Home</Link> / <span>Company Profile</span>
-          </div>
           <h1>{isAm ? 'የድርጅት መገለጫ እና የቴክኒክ አቅም' : 'Company Profile & Capabilities'}</h1>
           <p className="lead">
             {isAm

@@ -31,9 +31,6 @@ export default function ProformaPage() {
     <>
       <section className="page-hero">
         <div className="wrap">
-          <div className="crumbs">
-            <Link href="/">Home</Link> / <span>Proforma & Quotation</span>
-          </div>
           <h1>Request Official Proforma & Quotation</h1>
           <p className="lead">
             Formal itemized proposals for procurement committees, building managers, real estate developers, and private properties in Addis Ababa.
