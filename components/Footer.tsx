@@ -47,6 +47,7 @@ export default function Footer() {
           <ul>
             <li><Link href="/proforma">{isAm ? 'ህጋዊ ፕሮፎርማ ይጠይቁ' : 'Request Proforma / Quote'}</Link></li>
             <li><Link href="/company-profile">{isAm ? 'የድርጅት መገለጫ (Profile)' : 'Company Profile'}</Link></li>
+            <li><Link href="/#cctv-calculator">{isAm ? 'የሲሲቲቪ ስቶሬጅ ካልኩሌተር' : 'CCTV Storage Calculator'}</Link></li>
             <li><Link href="/services">{t.nav.services}</Link></li>
           </ul>
           <p className="footer-h" style={{ marginTop: 20 }}>

@@ -6,6 +6,7 @@ import { ShimmerImage } from '@/components/Skeleton';
 import { installCategories } from '@/lib/content';
 import { installations } from '@/lib/installations';
 import { HelpBlock } from '@/components/Sections';
+import BeforeAfterComparison from '@/components/BeforeAfterComparison';
 import { useLanguage } from '@/lib/i18n';
 
 export default function InstallationsPageContent() {
@@ -87,6 +88,8 @@ export default function InstallationsPageContent() {
           </section>
         );
       })}
+
+      <BeforeAfterComparison />
 
       <section className="section alt">
         <div className="wrap"><HelpBlock location="installations_help" /></div>

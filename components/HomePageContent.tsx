@@ -22,6 +22,9 @@ import { site } from '@/lib/site';
 import { services } from '@/lib/content';
 import Icon from '@/components/Icon';
 import { useLanguage } from '@/lib/i18n';
+import CorporateStatsBar from '@/components/CorporateStatsBar';
+import SecuritySystemCalculator from '@/components/SecuritySystemCalculator';
+import BeforeAfterComparison from '@/components/BeforeAfterComparison';
 
 export default function HomePageContent() {
   const { t, isAm } = useLanguage();
@@ -51,6 +54,7 @@ export default function HomePageContent() {
       </section>
 
       <TrustStrip />
+      <CorporateStatsBar />
 
       <section className="section" id="protect">
         <div className="wrap">
@@ -71,6 +75,8 @@ export default function HomePageContent() {
           <SolutionList />
         </div>
       </section>
+
+      <SecuritySystemCalculator />
 
       <section className="section" id="services">
         <div className="wrap">
@@ -113,6 +119,8 @@ export default function HomePageContent() {
           <InstallationsPreview />
         </div>
       </section>
+
+      <BeforeAfterComparison />
 
       <section className="section dark" id="demos">
         <div className="wrap">
