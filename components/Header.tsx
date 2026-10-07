@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import { Menu, X, FileText } from 'lucide-react';
 import ContactLink from './ContactLink';
@@ -10,13 +11,15 @@ import { useLanguage, LanguageSwitch } from '@/lib/i18n';
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
   const { t, isAm } = useLanguage();
 
   const nav = [
     { href: '/', label: t.nav.home },
     { href: '/solutions', label: t.nav.solutions },
-    { href: '/services', label: t.nav.services },
+    { href: '/calculator', label: isAm ? 'ካልኩሌተር' : 'Calculator' },
     { href: '/installations', label: t.nav.installations },
+    { href: '/services', label: t.nav.services },
     { href: '/proforma', label: t.nav.proforma || (isAm ? 'ፕሮፎርማ' : 'Proforma') },
     { href: '/about', label: t.nav.about },
     { href: '/contact', label: t.nav.contact },
@@ -36,7 +39,18 @@ export default function Header() {
           </span>
         </Link>
         <nav className="nav-desktop" aria-label="Main">
-          {nav.map((n) => <Link key={n.href} href={n.href}>{n.label}</Link>)}
+          {nav.map((n) => {
+            const isActive = n.href === '/' ? pathname === '/' : pathname.startsWith(n.href);
+            return (
+              <Link
+                key={n.href}
+                href={n.href}
+                className={isActive ? 'active' : ''}
+              >
+                {n.label}
+              </Link>
+            );
+          })}
         </nav>
         <div className="header-cta">
           <LanguageSwitch variant="pill" />
@@ -56,7 +70,19 @@ export default function Header() {
             <span>ቋንቋ / Language</span>
             <LanguageSwitch variant="pill" />
           </div>
-          {nav.map((n) => <Link key={n.href} href={n.href} onClick={() => setOpen(false)}>{n.label}</Link>)}
+          {nav.map((n) => {
+            const isActive = n.href === '/' ? pathname === '/' : pathname.startsWith(n.href);
+            return (
+              <Link
+                key={n.href}
+                href={n.href}
+                className={isActive ? 'active' : ''}
+                onClick={() => setOpen(false)}
+              >
+                {n.label}
+              </Link>
+            );
+          })}
         </nav>
       )}
     </header>

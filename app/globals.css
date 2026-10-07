@@ -76,12 +76,32 @@ h3 { font-size: 1.15rem; letter-spacing: -0.01em; }
 .nav-desktop { display: none; gap: 22px; font-weight: 600; }
 .nav-desktop a { text-decoration: none; padding: 8px 0; }
 .nav-desktop a:hover { color: var(--orange); }
+.nav-desktop a.active {
+  color: var(--green);
+  font-weight: 700;
+  position: relative;
+}
+.nav-desktop a.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2.5px;
+  background: var(--green);
+  border-radius: 99px;
+}
 .header-cta { display: flex; align-items: center; gap: 8px; }
 .header-cta .btn { min-height: 44px; padding: 0 16px; }
 .only-desktop { display: none; }
 .menu-btn { background: none; border: 0; width: 44px; height: 44px; display: grid; place-items: center; cursor: pointer; color: var(--ink); }
 .nav-mobile { display: grid; border-top: 1px solid var(--line); background: #fff; }
 .nav-mobile a { padding: 16px; font-weight: 700; text-decoration: none; border-bottom: 1px solid var(--line); font-size: 1.1rem; }
+.nav-mobile a.active {
+  color: var(--green);
+  background: #f0fdf4;
+  border-left: 4px solid var(--green);
+}
 
 /* Hero */
 .hero { background: var(--night); color: #fff; padding: 34px 0 40px; overflow: hidden; }
