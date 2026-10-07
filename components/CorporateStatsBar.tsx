@@ -10,7 +10,7 @@ export default function CorporateStatsBar() {
   const stats = [
     {
       icon: Camera,
-      num: '500+',
+      num: '5,000+',
       label: isAm ? 'የተገጠሙ ካሜራዎች' : 'Cameras Deployed',
       desc: isAm ? 'በአዲስ አበባ ዙሪያ ለቤቶች፣ ሱቆች፣ ቢሮዎችና ፋብሪካዎች' : 'Installed across Addis Ababa homes, offices & factories',
     },
