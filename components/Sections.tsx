@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { ShimmerImage } from './Skeleton';
-import { Play } from 'lucide-react';
+import { Play, MapPin } from 'lucide-react';
 import Icon from './Icon';
 import ContactLink from './ContactLink';
 import CtaRow from './CtaRow';
@@ -142,19 +142,51 @@ export function HelpBlock({ location = 'help_block' }: { location?: string }) {
 }
 
 export function InstallationsPreview() {
-  const { t } = useLanguage();
+  const { t, isAm } = useLanguage();
   const shown = installations.slice(0, 3);
 
   return (
     <>
       {shown.length > 0 ? (
         <div className="inst-grid">
-          {shown.map((i) => (
-            <figure className="inst" key={i.image}>
-              <ShimmerImage src={i.image} alt={i.alt} width={i.width || 1200} height={i.height || 900} sizes="(max-width:720px) 100vw, 33vw" />
-              <div><h3>{i.title}</h3><p>{i.location}</p></div>
-            </figure>
-          ))}
+          {shown.map((i) => {
+            const title = isAm && i.titleAm ? i.titleAm : i.title;
+            const location = isAm && i.locationAm ? i.locationAm : i.location;
+            const tags = isAm && i.tagsAm ? i.tagsAm : i.tags || [];
+
+            return (
+              <article className="inst-card" key={i.image}>
+                <div className="inst-card-media">
+                  <ShimmerImage
+                    src={i.image}
+                    alt={i.alt}
+                    width={i.width || 1200}
+                    height={i.height || 900}
+                    sizes="(max-width:640px) 100vw, (max-width:1024px) 50vw, 33vw"
+                  />
+                  <span className="inst-badge-loc">
+                    <MapPin size={13} color="var(--orange)" /> {location.split(',')[0]}
+                  </span>
+                </div>
+                <div className="inst-card-body">
+                  <h3 className="inst-card-title">{title}</h3>
+                  <div className="inst-card-loc">
+                    <MapPin size={13} color="var(--green)" style={{ flex: 'none' }} />
+                    <span>{location}</span>
+                  </div>
+                  {tags.length > 0 && (
+                    <div className="inst-card-tags">
+                      {tags.slice(0, 3).map((tag, idx) => (
+                        <span className="inst-chip" key={idx}>
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              </article>
+            );
+          })}
         </div>
       ) : (
         <ul className="cat-list">
