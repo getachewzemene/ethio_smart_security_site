@@ -179,7 +179,40 @@ ${notes ? `📝 Special Notes: ${notes}\n` : ''}
 Please send the formal itemized quotation / schedule the on-site engineering assessment.`;
   };
 
+  const submitProformaLead = async () => {
+    try {
+      const numCams = parseInt(cameraCount, 10) || 8;
+      const baseEstimate = numCams * 12500 + (parseInt(storageDays, 10) || 30) * 350 + selectedAddons.length * 15000;
+
+      await fetch('/api/proforma/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          refCode,
+          companyName,
+          contactPerson,
+          phone,
+          location,
+          tinNumber,
+          propertyType,
+          cameraCount,
+          storageDays,
+          powerBackup,
+          serviceType,
+          selectedFeatures,
+          selectedAddons,
+          notes,
+          estimatedTotalETB: baseEstimate,
+          source: 'Website Proforma Wizard',
+        }),
+      });
+    } catch {
+      // ignore
+    }
+  };
+
   const handlePrint = () => {
+    submitProformaLead();
     window.print();
   };
 
@@ -692,6 +725,7 @@ Please send the formal itemized quotation / schedule the on-site engineering ass
                 href={whatsappLink(generateWhatsAppMessage())}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => submitProformaLead()}
                 className="btn btn-lg btn-whatsapp btn-solid"
                 style={{ flex: '1 1 240px' }}
               >

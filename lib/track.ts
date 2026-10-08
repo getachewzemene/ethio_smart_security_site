@@ -54,18 +54,93 @@ export function getAttribution(): Attribution {
   }
 }
 
+function detectDevice(): 'mobile' | 'desktop' | 'tablet' {
+  if (typeof window === 'undefined') return 'desktop';
+  const ua = navigator.userAgent;
+  if (/iPad|Tablet/i.test(ua)) return 'tablet';
+  if (/Mobile|Android|iP(hone|od)/i.test(ua)) return 'mobile';
+  return 'desktop';
+}
+
+function detectCity(): string {
+  // Can be refined, default regional hub based on tz or locale
+  return 'Addis Ababa';
+}
+
 export function track(event: string, params: Params = {}) {
   if (typeof window === 'undefined') return;
   const attr = getAttribution();
   const payload: Params = { ...attr, ...params, page_path: window.location.pathname };
+  
+  // Third-party platform scripts
   window.gtag?.('event', event, payload);
+  
   if (event === 'cta_click') {
-    // Standard "Contact" conversion for ad platforms
     window.fbq?.('track', 'Contact', { content_name: String(params.cta_type || '') });
     window.ttq?.track('Contact', { content_name: String(params.cta_type || '') });
+
+    // Send to internal server API for admin portal
+    try {
+      fetch('/api/track', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          type: 'cta',
+          kind: params.cta_type || 'whatsapp',
+          location: params.location || 'unknown',
+          message: params.message || '',
+          path: window.location.pathname,
+          source: attr.utm_source || attr.traffic_source || 'direct',
+        }),
+      }).catch(() => {});
+    } catch {
+      // ignore
+    }
+  } else if (event === 'page_view') {
+    try {
+      fetch('/api/track', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          type: 'visit',
+          path: window.location.pathname,
+          title: typeof document !== 'undefined' ? document.title : '',
+          traffic_source: attr.utm_source || attr.traffic_source || 'direct',
+          utm_source: attr.utm_source,
+          utm_medium: attr.utm_medium,
+          utm_campaign: attr.utm_campaign,
+          utm_content: attr.utm_content,
+          device: detectDevice(),
+          city: detectCity(),
+          referrer: typeof document !== 'undefined' ? document.referrer : '',
+        }),
+      }).catch(() => {});
+    } catch {
+      // ignore
+    }
   } else if (event === 'view_solution') {
     window.fbq?.('track', 'ViewContent', { content_name: String(params.solution || '') });
     window.ttq?.track('ViewContent', { content_name: String(params.solution || '') });
   }
+
+  // Also log pixel events to admin telemetry
+  if (event === 'cta_click' || event === 'view_solution' || event === 'proforma_submit') {
+    try {
+      fetch('/api/track', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          type: 'pixel',
+          platform: 'meta',
+          event: event === 'cta_click' ? 'Contact' : event === 'proforma_submit' ? 'Lead' : 'ViewContent',
+          path: window.location.pathname,
+          data: payload,
+        }),
+      }).catch(() => {});
+    } catch {
+      // ignore
+    }
+  }
+
   if (process.env.NODE_ENV !== 'production') console.debug('[track]', event, payload);
 }

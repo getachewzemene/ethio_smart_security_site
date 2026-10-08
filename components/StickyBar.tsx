@@ -1,10 +1,16 @@
 'use client';
 
+import { usePathname } from 'next/navigation';
 import ContactLink from './ContactLink';
 import { useLanguage } from '@/lib/i18n';
 
 export default function StickyBar() {
   const { t } = useLanguage();
+  const pathname = usePathname();
+
+  if (pathname?.startsWith('/admin')) {
+    return null;
+  }
 
   return (
     <nav className="sticky-bar" aria-label="Contact us">

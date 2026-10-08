@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { site } from '@/lib/site';
 import { solutions, useCases } from '@/lib/content';
 import ContactLink from './ContactLink';
@@ -8,6 +9,11 @@ import { useLanguage, LanguageSwitch } from '@/lib/i18n';
 
 export default function Footer() {
   const { t, isAm } = useLanguage();
+  const pathname = usePathname();
+
+  if (pathname?.startsWith('/admin')) {
+    return null;
+  }
 
   return (
     <footer className="footer">

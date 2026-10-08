@@ -24,6 +24,10 @@ export default function Header() {
     { href: '/contact', label: t.nav.contact },
   ];
 
+  if (pathname?.startsWith('/admin')) {
+    return null;
+  }
+
   return (
     <header className="header">
       <div className="wrap header-in">
